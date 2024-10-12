@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Manrope;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.12px;
+    margin: 20px 0;
+}
+
+.h-nav-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.12px;
+    text-align: left;
+    color: #000000;
+    margin: auto;
+    margin-right: 30px;
+}
+
+.h-nav-item-middle {
+    color: #898989;
+}
+
+.city {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    text-align: left;
+}
+
+.telephone {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    text-align: left;
+    color: #55B74C;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.tel-pic {
+    width: 23px;
+    height: 23px;
+}
+
+.telephone-num {
+    display: flex;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #55B74C 0%, #4BA043 162.75%);
+    width: 1200px;
+    height: 51px;
+    gap: 0px;
+    border-radius: 7px 7px 7px 7px;
+    opacity: 0px;
+    text-align: center;   
+    margin: 20px 0;
+}
+
+.bottom-head {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.59px;
+    margin: auto;
+}
+.logo {
+    width: 175px;
+    height: 51px;
+    
+}
+.main-signs {
+    display: flex;
+}
+
+.loop {
+    width: 27px;
+    height: 27px;
+   margin: auto;
+}
+
+.shoping-bag {
+    width: 28px;
+    height: 29px;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.heart {
+    width: 29px;
+    height: 27px;
+    margin: auto;
+    margin-left: 20px;
+}
+ 
+.pic-log {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
