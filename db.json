@@ -1,0 +1,39 @@
+{
+  "menu": [
+    {
+      "img": "img/goods1",
+      "title": "Цветы"
+    },
+    {
+      "img": "img/goods2",
+      "title": "Воздушные шарики"
+    },
+    {
+      "img": "img/sladosti",
+      "title": "Cладости"
+    },
+    {
+      "img": "img/korzina",
+      "title": "Фруктовые корзины"
+    },
+    {
+      "img": "img/room_flowers",
+      "title": "Комнатные растения"
+    },
+    {
+      "img": "img/gifts",
+      "title": "Подарки"
+    },
+    {
+      "img": "img/services",
+      "title": "Услуги"
+    },
+    {
+      "img": "img/accesories",
+      "title": "Аксессуары"
+    }
+  ],
+  "request":[
+    
+  ]
+}

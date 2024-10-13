@@ -8,14 +8,17 @@
     text-decoration: none;
 }
 
-body {
+/* body {
     display: flex;
     justify-content: center;
-}
+} */
+
+
 
 .top {
     display: flex;
     justify-content: space-between;
+    width: 1200px;
     font-weight: 400;
     font-size: 14px;
     line-height: 19.12px;
@@ -54,6 +57,7 @@ body {
 .middle {
     display: flex;
     justify-content: space-between;
+    width: 1200px;
     margin: 20px 0;
 }
 
@@ -119,4 +123,51 @@ body {
     height: 20px;
     margin: auto;
 }
+
+.main-block {
+    width: 1200px;
+    margin-bottom: 40px;
+} 
+
+.goods-main {
+    width: 278px;
+    height: 278px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 5px;
+   
+}
+
+.goods {
+    width: 1200px;  
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.good-card {
+    position: relative;
+}
+
+.green-category {
+ 
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    text-align: center;
+
+    background: #55B74CCC;
+    color: #FFFFFF;
+
+    width: 278px;
+    height: 62px;
+    gap: 0px;
+    border-radius: 13px 13px 0px 0px;
+    opacity: 0px;
+
+    position: relative;
+    top:-73px;
+    left:5px;
+}
+
 

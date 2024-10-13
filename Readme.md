@@ -17,3 +17,12 @@ https://www.figma.com/file/Nkl3IWYhmkTQhPyanZ5g4J/Floristman?node-id=0%3A1 <br>
 ![alt text](image.png)
 
 
+
+### Установка json-server:
+Устанавливаем для разработки, чтобы имитировать работу с бекендом.<br>
+Карточки товаров заносятся из JSON.<br>
+JSON SERVER нужен для того, чтобы обработать POST запросы с формы заявки.<br>
+Без POST зарпросов достаточно функции FETCH.
+Команда:<br>
+`` npm i json-server --save-dev``
+
