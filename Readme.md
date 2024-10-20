@@ -4,8 +4,8 @@
 1. html
 2. css
 3. Java script
-4. Node JS
-5. Хранение данных в базе данных (какая не придумал) <br>
+4. Node JS + Express 
+5. MySQL <br>
    
 ### Ссылка на макет:
 https://www.figma.com/file/Nkl3IWYhmkTQhPyanZ5g4J/Floristman?node-id=0%3A1 <br>
@@ -18,6 +18,4 @@ https://www.figma.com/file/Nkl3IWYhmkTQhPyanZ5g4J/Floristman?node-id=0%3A1 <br>
 
 
 
-### Карточки категорий:
-Подгружаются из файла db.json
 

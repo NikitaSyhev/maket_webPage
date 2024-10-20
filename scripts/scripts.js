@@ -1,5 +1,4 @@
-//получили днные с json (db.json)
-
+//получили днные с json (db.json) - тест
 fetch('db.json')
     .then(data => data.json())
     .then(res => console.log(res));
@@ -7,7 +6,6 @@ fetch('db.json')
 
 
 // использую классы для создания карточкек категорий
-
 class MenuCard {
     constructor(img, alt, title, parentSelector) {
         this.img = img;
@@ -28,6 +26,33 @@ class MenuCard {
     }
 }
 
+//класс карточке со скидками
+
+class MenuDicsount {
+    constructor(img, alt, title, price, parentSelector) {
+        this.img = img;
+        this.alt = alt;
+        this.title = title;
+        this.price = price;
+        this.parent = document.querySelector(parentSelector);
+    }
+    render() {
+        const elenent = document.createElement('div');
+        
+        elenent.innerHTML = `<div class="good-card">
+                <img src=${this.img} alt=${this.alt} class="goods-main">
+                <div class="title-disc">
+                    <p class="title-disc">${this.title}</p>
+                    <p class="price-disc">${this.price} руб.</p>
+                </div>
+                <div class="green-category-disc">
+                    Добавить в корзину
+                </div>
+            </div>`;
+            this.parent.append(elenent);
+    }
+}
+
 //получение данных для карточки товара с JSON 
 const getResourses = async (url) => {
     const res = await fetch(url);
@@ -39,71 +64,28 @@ const getResourses = async (url) => {
     return await res.json();
 }
 
-//строим карточки товаров, фетчим данные с JSON.DB - вызов функции
+
+//вызов функции
+//строим карточки товаров, фетчим данные с JSON SERVER ( FAKE REST API )
 getResourses('db.json')
     .then(data => {
         
         data['menu'].forEach(({img, alt, title}) => {
             new MenuCard(img, alt, title, '.goods').render();
         });
-    })
+    });
 
-// //верстка карточек товаров
-// new MenuCard(
-//     "img/goods1.jfif",
-//     "good1",
-//     "Цветы",
-//     ".goods"
-// ).render();
-// //2
-// new MenuCard(
-//     "img/goods2.jfif",
-//     "good1",
-//     "Воздушные шарики",
-//     ".goods"
-// ).render();
+getResourses('discounts.json')
+    .then(data => {
+        
+        data['menu'].forEach(({img, alt, title, price}) => {
+            new MenuDicsount(img, alt, title, price, '.goods-discounts').render();
+        });
+    });
 
-// //3
-// new MenuCard(
-//     "img/sladosti.jfif",
-//     "good1",
-//     "Сладости",
-//     ".goods"
-// ).render();
-// //4
-// new MenuCard(
-//     "img/korzina.jfif",
-//     "good1",
-//     "Фруктовые корзины",
-//     ".goods"
-// ).render();
-// //5
-// new MenuCard(
-//     "img/room_flowers.jfif",
-//     "good1",
-//     "Комнатные растения",
-//     ".goods"
-// ).render();
-// //6
-// new MenuCard(
-//     "img/gifts.jfif",
-//     "good1",
-//     "Подарки",
-//     ".goods"
-// ).render();
-// //7
-// new MenuCard(
-//     "img/services.jfif",
-//     "good1",
-//     "Услуги",
-//     ".goods"
-// ).render();
-// //8
-// new MenuCard(
-//     "img/accesories.jfif",
-//     "good1",
-//     "Аксессуары",
-//     ".goods"
-// ).render();
+
+
+
+
 
 
